@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tipe Data Javascript</title>
+</head>
+<body>
+    <h2>Tipe Data Variabel</h2>
+    <p id="typeLength"></p>
+    <p id="typeLastname"></p>
+    <p id="typeObject"></p>
+
+    <script>
+        //Inisiasi variabel
+        let length = 16; //Number
+        let lastname = "Johnson"; //String
+        const x = {
+            firstName: "John",
+            lastName: "Doe"
+        }; //Object
+        
+        //Mengetahui tipe data menggunakan typeof
+        document.getElementById(`typeLength`).innerHTML = `Tipe data dari length adalah: ${typeof length}`;
+        document.getElementById(`typeLastname`).innerHTML = `Tipe data dari lastname adalah: ${typeof lastname}`;
+        document.getElementById(`typeObject`).innerHTML = `Tipe data dari x adalah: ${typeof x}`;
+    </script>
+</body>
+</html>
