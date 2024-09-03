@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Java Script Example</title>
+</head>
+<body>
+    <h1>Java Script Penjumlahan Variabel</h1>
+    <p id='hasil1' ></p>
+    <p id='hasil2' ></p>
+    
+    <script>
+        // Inisiasi Variabel
+        let var1 = 10;  // Variabel pertama = 10 
+        let var2 = "saya belajar javascript"; // Variabel kedua = string
+        let var3 = 30; // Variabel ketiga = angka random
+        
+        //Melakukan penjumlahan variabel 1 & 2
+        let hasil1 = var1+var2;
+        //Menampilkan hasil var1 + var2
+        document.getElementById('hasil1').innerHTML = `Hasil penjumlahan antar variabel adalah: ${hasil1}`;
+        
+        // Mengatasi kesalahan & menampilkan hasil 
+        let hasil2 = var1+var3;
+        document.getElementById('hasil2').innerHTML = `Terjadi kesalahan, hasil sebenarnya adalah: ${hasil2}`;
+        
+    </script>
+</body>
+</html>
