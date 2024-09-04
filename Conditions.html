@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Condtions</title>
+</head>
+<body>
+    <h1> Simple JavaScript Conditional code</h1>
+    <p id = "values"></p> 
+    <p id = "conditions"></p>
+
+    <script>
+        //Membuat variabel x dan y memiliki nilai yang acak 
+        const x = Math.floor(Math.random()*100) + 1; //Nilai acak antara 1 hingga 100
+        const y = Math.floor(Math.random()*100) + 1; //Nilai acak antara 1 hingga 100
+        let greetings;
+
+        // Kalimat yang keluar jika memiliki kondisi....
+        if (x > y) {
+            greetings = "Horee Saya Bisa!";
+        } else {
+            greetings = "Anda belum berhasil, Ayo coba lagi!!";
+        }
+        //Menampilkan hasil pada interface
+        document.getElementById("values").innerHTML = `Nilai x adalah ${x} dan Nilai y adalah ${y}`;
+        document.getElementById("conditions").innerHTML = greetings;
+
+    </script>
+    
+</body>
+</html>
