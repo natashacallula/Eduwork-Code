@@ -1,0 +1,14 @@
+{
+  "name": "educy",
+  "version": "1",
+  "description": "Automation using cypress example",
+  "main": "index.js",
+  "author": "Natasha",
+  "license": "MIT",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^13.14.2"
+  }
+}
