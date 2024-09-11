@@ -1,0 +1,12 @@
+{
+    "user": "username",
+    "pass": "password" ,
+
+    "amount": "2000",
+    "desc": "Payment for monthly groceries.",
+    
+    "pname" : "Lala marcella",
+    "paddress" : "Hotel California Road No.2456",
+    "acc" : "Citibank Platinum",
+    "detail" : "School & Home"
+ }
