@@ -1,0 +1,12 @@
+{
+  "name": "eduadv",
+  "version": "1.0.0",
+  "description": "Cypress Advanced Eduwork",
+  "main": "index.js",
+  "author": "Nacl",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.14.2",
+    "prettier": "^3.3.3"
+  }
+}
