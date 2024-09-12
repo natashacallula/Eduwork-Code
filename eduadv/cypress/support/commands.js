@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('loginbank', (validusername, validpassword) =>{
+    cy.clearCookies()
+    cy.clearAllLocalStorage()
+   
+    cy.get('#user_login').type(validusername)
+    cy.get('#user_password').type(validpassword)
+    cy.get('input[name="submit"]').click()
+   })
