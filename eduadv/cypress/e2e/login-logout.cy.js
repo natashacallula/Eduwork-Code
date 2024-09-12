@@ -34,13 +34,13 @@ describe('Login & Logout Test', () => {
         })
     });
 
-    it('Should logiut from the application', () => {
+    it('Should logout from the application', () => {
         cy.fixture("bank").then(bank => {
             const validusername = bank.user
             const validpassword = bank.pass
 
             cy.get('#login_form').should('be.visible')
-            
+
             cy.loginbank(validusername, validpassword)
 
             cy.get('h2').should('contain.text', 'Cash Accounts')
