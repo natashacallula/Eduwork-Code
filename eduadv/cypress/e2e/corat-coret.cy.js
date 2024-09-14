@@ -1,5 +1,5 @@
 /// <reference types ="cypress" />
-
+    
 describe('Searchbox Test', () => {
     before(() => {
       cy.visit('http://zero.webappsecurity.com/index.html');
