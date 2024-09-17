@@ -31,4 +31,22 @@ Cypress.Commands.add('loginbank', (validusername, validpassword) =>{
     cy.get('#user_login').type(validusername)
     cy.get('#user_password').type(validpassword)
     cy.get('input[name="submit"]').click()
-   })
+   });
+   
+Cypress.Commands.add('loginsauce', (username, password)=>{
+    cy.clearCookies()
+    cy.clearAllLocalStorage()
+
+    cy.url().should('include', 'saucedemo.com')
+
+    cy.get('#user-name').type(username)
+    cy.get('#password').type(password)
+    cy.get('#login-button').click()
+})
+
+Cypress.Commands.add('cartsauce', () =>{
+    cy.get('#add-to-cart-sauce-labs-backpack').click()
+    cy.get('.shopping_cart_link').click()
+    cy.url().should('include', 'cart.html')
+    cy.get('#checkout').click()
+})
