@@ -1,0 +1,11 @@
+{
+  "name": "eduapi",
+  "version": "1.0.0",
+  "description": "API Testing",
+  "main": "index.js",
+  "author": "Nacl",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.14.2"
+  }
+}
