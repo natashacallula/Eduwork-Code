@@ -11,6 +11,7 @@ CREATE TABLE user1 (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
 CREATE TABLE category1 (
     id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT,
@@ -45,17 +46,17 @@ VALUES
 
 INSERT INTO mydatabase.category1 (user_id, code, name, slug, description, status, photo)
 VALUES 
-    (1, 'S-01', 'Category One', 'category-one', 'Zoo', 'active', 'photo1.jpg'),
-    (2, 'S-02', 'Category Two', 'category-two', 'Stella', 'active', 'photo2.jpg'),
-    (3, 'S-03', 'Category Three', 'category-three', 'Starlight', 'secret', 'photo3.jpg');
+    (1, 'S-01', 'Place', 'category-one', 'Zoo', 'active', 'photo1.jpg'),
+    (2, 'S-02', 'Performance', 'category-two', 'Stella', 'active', 'photo2.jpg'),
+    (3, 'S-03', 'Ranking', 'category-three', 'Starlight', 'secret', 'photo3.jpg');
 
 INSERT INTO mydatabase.product1 (category_id, user_id, code, name, slug, description, photo, qty, unit, price, status)
 VALUES 
-    (1, 1, 'pro-01', 'Product One', 'product-one', 'Hand Gun', 'product1.jpg', 15.0, 'pcs', 100.0, 'available'),
-    (2, 2, 'prod-02', 'Product Two', 'product-two', 'AK-47', 'product2.jpg', 10.0, 'pcs', 20.0, 'available'),
-    (3, 3, 'prod-03', 'Product Three', 'product-three', 'Hand Knife', 'product3.jpg', 30.0, 'pcs', 35.0, 'available');
-
-SELECT 
+    (1, 1, 'pro-01', 'Hand Gun', 'p-one', 'Traditional Weapon', 'product1.jpg', 15.0, 'pcs', 100.0, 'available'),
+    (2, 2, 'prod-02', 'AK-47', 'p-two', 'Automatic Weapon', 'product2.jpg', 10.0, 'pcs', 20.0, 'available'),
+    (3, 3, 'prod-03', 'Knife', 'p-three', 'Hand Knife', 'product3.jpg', 30.0, 'pcs', 35.0, 'available');
+    
+   SELECT 
     u.id AS user_id,
     u.email,
     u.name,
@@ -70,3 +71,4 @@ LEFT JOIN
     mydatabase.product1 p ON u.id = p.user_id       
 LEFT JOIN 
     mydatabase.category1 c ON p.category_id = c.id;
+
