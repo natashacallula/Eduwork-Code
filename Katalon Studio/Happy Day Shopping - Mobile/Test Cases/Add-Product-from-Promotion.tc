@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Add-Product-from-Promotion</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>d99c5cb7-89b7-4f78-bba5-487a71a6d26b</testCaseGuid>
+</TestCaseEntity>
