@@ -46,5 +46,10 @@ This repository contains my solutions to assignments, quizzes, and projects from
 - Android Studio: Emulator for mobile testing and debugging
 
 ## 📽️ Demo & Showcase 📽️
-There are no specific demos, but you can explore the code and solutions within this repository to follow my learning progress.
 
+**The following demo videos showcase various automation testing tasks and practical implementations I developed during the bootcamp, highlighting key concepts such as web automation, API testing, mobile testing, and BDD.**
+
+[![Website Testing - BDD with Cucumber](https://img.youtube.com/vi/2OF4pxR43CA/0.jpg)](https://youtu.be/2OF4pxR43CA)
+[![Mobile Testing - Pendaki App](https://img.youtube.com/vi/czc7QFLCaA4/0.jpg)](https://youtu.be/czc7QFLCaA4)
+[![Mobile Testing - Calculator](https://img.youtube.com/vi/54Tv_VS_2Xw/0.jpg)](https://youtu.be/54Tv_VS_2Xw)
+[![Mobile Testing - Happy Day Shopping](https://img.youtube.com/vi/Ku2MKgBQzKQ/0.jpg)](https://youtu.be/Ku2MKgBQzKQ)
